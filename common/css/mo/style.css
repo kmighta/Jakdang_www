@@ -1,0 +1,798 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  line-height: 1.4;
+  overflow-x: hidden;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  word-break: keep-all;
+}
+
+img {
+  max-width: 100%;
+}
+
+input {
+  margin: 0;
+  padding: 0 15px;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.w1200 {
+  max-width: 780px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*max-width: 380px;*/
+  max-width: 190px;
+  width: 100%;
+  height: 56px;
+  color: #fff;
+  background-color: #f83d3c;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+.swiper-pagination {
+  position: relative;
+  inset: 0;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+.side_link {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 40px;
+  bottom: 100px;
+  z-index: 10;
+}
+.side_link a {
+  margin-top: 20px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	margin:0 auto;
+	height: 110px;
+	/*border:1px solid red;*/
+	background-color:rgba(255, 255, 255, 0.9);
+}
+.header .menu {
+  display: flex;
+  gap: 40px;
+}
+.header .menu a {
+  color: #000;
+  font-size: 18px;
+}
+.header .menu a.big {
+  color: #000;
+  font-size: 18px;
+  font-weight:700;
+}
+.header .btn_menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 28px;
+}
+.header .btn_menu::before, .header .btn_menu::after {
+  display: flex;
+  width: 100%;
+  height: 5px;
+  background-color: #000;
+  border-radius: 5px;
+  content: "";
+  margin:2px 0px 0px 0px;
+}
+.header .btn_menu span {
+  display: flex;
+  width: 60%;
+  height: 5px;
+  background-color: #000;
+  border-radius: 5px;
+  margin:2px 0px 0px 0px;
+}
+
+.header .btn_menu.on span {
+  background-color: #fff;
+}
+
+.footer {
+  padding-top: 150px;
+  padding-bottom: 200px;
+  background-color: #141313;
+  color: #fff;
+  text-align: center;
+}
+.footer .title {
+  margin-bottom: 30px;
+  font-size: 35px;
+  font-weight: 700;
+}
+.footer .red {
+  color: #f83d3c;
+}
+
+.mainVisual {
+  padding-top: 220px;
+  padding-bottom: 170px;
+  color: #fff;
+  background-image: url(http://ictedu.co.kr/landing/prj_003/images/mainVisual01.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+.mainVisual .btn {
+  margin-top: 65px;
+}
+.mainVisual .tx1 {
+  font-size: 30px;
+}
+.mainVisual .tx1 .red {
+  color: #f83d3c;
+}
+.mainVisual .tx2 {
+  margin-top: 40px;
+  font-size: 60px;
+  line-height: 1.2;
+}
+.mainVisual .tx3 {
+  margin-top: 50px;
+  font-size: 30px;
+}
+.mainVisual .tx4 {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.con {
+  padding-top: 150px;
+  padding-bottom: 160px;
+}
+.con .title {
+  position: relative;
+  z-index: 1;
+  font-size: 35px;
+  font-weight: 700;
+}
+.con .pt32 { padding-top:32px; }
+.con .pt85 { padding-top:85px; }
+.con .pb15 { padding-bottom:15px; }
+.con .pb22 { padding-bottom:22px; }
+.con .pb30 { padding-bottom:30px; }
+.con .pb35 { padding-bottom:35px; }
+.con .pb40 { padding-bottom:40px; }
+.con .pb45 { padding-bottom:45px; }
+.con .pb55 { padding-bottom:55px; }
+.con .pb70 { padding-bottom:70px; }
+.con .pb75 { padding-bottom:75px; }
+.con .pb80 { padding-bottom:80px; }
+.con img { margin:0 auto; }
+table.market_con_ico tr td { text-align:center; vertical-align:top; }
+table.market_con_ico tr td img { padding:20px; }
+
+
+table#write_frm { width:100%; }
+table#write_frm tr td { border:1px solid #2d2729; background:#ffffff; height:18px; padding:14px 18px 14px 18px }
+table#write_frm tr td.none { border:none; background:none; }
+table#write_frm tr td.write { height:556px; }
+table#write_frm tr td.btn_contents { border:none; padding:14px 0px 14px 0px; text-align:center; }
+table#write_frm tr td.btn_contents button { border:1px solid #2d2729; background:#ffffff; width:204px; height:46px; padding:14px 18px 14px 18px; font-size:15px;font-weight:600; }
+table#write_frm tr td.btn_contents input.agree_chk { width:15px; height:15px; background:#d2d3d6; }
+
+span.yellow {
+  background-color: #e8d531;
+  background:linear-gradient(to bottom, transparent 15%, #e8d531 15%, #e8d531 93%, transparent 50%);
+}
+
+.con .tx1, .con .tx2 { line-height:1.5em; }
+
+
+
+.con .title::after {
+  position: absolute;
+  top: 50%;
+  left: -145px;
+  transform: translateY(-50%);
+  z-index: -1;
+  font-size: 85px;
+  font-weight: 700;
+  color: #2d2d2d;
+}
+.con .red {
+  color: #f83d3c;
+}
+.con .yellow {
+  background-color: #e8d531;
+  background:linear-gradient(to bottom, #ffffff 15%, #e8d531 15%, #e8d531 93%, transparent 50%);
+}
+.con .ico_tit {
+  font-size: 18px;
+  font-weight: 500;
+	@media (max-width: 480px) {
+		font-size: 16px;
+	}
+}
+
+.con1 .title::after {
+  content: "OUR RESULTS";
+}
+.con1 .item {
+  text-align: center;
+}
+.con1 .item__wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 70px;
+  margin-top: 100px;
+}
+.con1 .item__title {
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.con1 .item__desc {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.con2 {
+  background-image: url(http://ictedu.co.kr/landing/prj_003/images/con2_1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.con2 .title::after {
+  content: "CURRICULEM";
+}
+.con2 .btn {
+  margin-top: 40px;
+}
+.con2 .item__title {
+  margin-top: 140px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.con2 .item__desc {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.con2 .item__desc-list {
+  margin-left: 15px;
+  margin-top: 55px;
+}
+.con2 .item__desc-footer {
+  margin-left: 15px;
+  margin-top: 40px;
+}
+.con2 .price {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+}
+.con2 .price__text {
+  margin-right: 45px;
+  font-size: 30px;
+}
+.con2 .price__number {
+  font-size: 40px;
+}
+.con2 .price__number-text {
+  font-size: 15px;
+}
+
+.con3 .title::after {
+  content: "REVIEWS";
+}
+.con3 .item {
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(to left, #000, #494848);
+}
+.con3 .item.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(to left, #361a1a, #494848);
+  color: #fff;
+}
+.con3 .item.link .dib {
+  display: inline-block;
+}
+.con3 .item.link .item__desc {
+  font-size: 20px;
+}
+.con3 .item__wrap {
+  margin-top: 140px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+.con3 .item__title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.con3 .item__user {
+  margin-top: 10px;
+  font-size: 15px;
+  text-align: right;
+}
+.con3 .item__desc {
+  margin-top: 25px;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.con4 {
+  background-color: #000;
+}
+.con4 .title::after {
+  content: "STUDENT WORK";
+}
+.con4 .swiper {
+  margin-top: 140px;
+}
+.con4 .swiper-slide img {
+  width: 100%;
+}
+
+.con5 {
+/*
+  background-image: url(http://ictedu.co.kr/landing/prj_003/images/con5_1.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+*/
+}
+.con5 .title::after {
+}
+.con5 .sub_title::after {
+}
+.con5 .tx1 {
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.con5 .tx2 {
+  margin-top: 55px;
+  font-size: 25px;
+  font-weight: 500;
+}
+.con5 .item__wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 45px;
+  margin-top: 80px;
+}
+.con5 .item__title {
+  margin-top: 35px;
+  font-size: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.con5 .item__user {
+  margin-top: 20px;
+  font-size: 15px;
+  text-align: right;
+}
+.con5 .item .img {
+  position: relative;
+  padding-top: 50%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.con5 .item .img img {
+  position: absolute;
+  inset: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.con6 {
+  background-image: url(http://ictedu.co.kr/landing/prj_003/images/con6_2.png);
+  background-repeat: no-repeat;
+  background-position: right 0;
+  background-size: cover;
+}
+.con6 .title {
+  font-size: 30px;
+  font-weight: 500;
+}
+.con6 .btn {
+  margin: 30px auto 0;
+}
+.con6 .img {
+  margin-top: 110px;
+}
+
+.con7 {
+  background-color: #000;
+}
+.con7 .title::after {
+  content: "LOCATION";
+}
+.con7 .map__wrap {
+  display: flex;
+}
+.con7 .tx__wrap {
+  width: 50%;
+}
+.con7 .tx1 {
+  margin-top: 220px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.con7 .tx2 {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.con8 .title::after {
+  content: "LOCATION";
+}
+.con8 .swiper {
+  margin-top: 90px;
+}
+
+.con9 {
+  background-color: #000;
+}
+.con9 .title::after {
+  content: "ONLINE CUNSULTING";
+}
+.con9 .tx1 {
+  max-width: 450px;
+  margin-top: 50px;
+  font-size: 20px;
+}
+.con9 .item {
+  margin-left: 20px;
+}
+.con9 .item__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.con9 .item__title {
+  display: flex;
+  align-items: center;
+  height: 37px;
+  margin-top: 70px;
+  padding-left: 50px;
+  background-image: url(http://ictedu.co.kr/landing/prj_003/images/con9_1.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  font-size: 20px;
+}
+.con9 .item__list {
+  margin-top: 20px;
+  margin-left: 35px;
+}
+.con9 .item__desc {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.con9 .item__footer {
+  display: flex;
+  align-items: center;
+  margin-top: 85px;
+}
+.con9 .item__footer .text {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  padding-left: 35px;
+  background-image: url(http://ictedu.co.kr/landing/prj_003/images/con9_2.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  font-size: 15px;
+}
+.con9 .item__footer .text .red {
+  display: contents;
+}
+.con9 .item__footer .link {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  margin-left: 50px;
+  padding-left: 30px;
+  color: #fff;
+  background-image: url(http://ictedu.co.kr/landing/prj_003/images/con9_3.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  font-size: 15px;
+}
+.con9 .form {
+  max-width: 440px;
+  width: 100%;
+  padding: 50px;
+  border-radius: 20px;
+  background: linear-gradient(to left, #000, #494848);
+  text-align: center;
+}
+.con9 .form .input__check {
+  display: flex;
+  align-items: center;
+}
+.con9 .form .input__check input {
+  margin-right: 10px;
+}
+.con9 .form .input__check a {
+  margin-left: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+.con9 .form .input__text {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.con9 .form .input__text input {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+}
+.con9 .form .input__text .label {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.con9 .form__title {
+  font-size: 35px;
+  font-weight: 700;
+}
+.con9 .form__desc {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  font-size: 16px;
+}
+.con9 .form .btn {
+  width: 100%;
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+@media (max-width: 780px) {
+  .header {
+    position: fixed;
+    z-index: 2;
+    height: 80px;
+  }
+  .header .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 11;
+    background-color: #fff;
+  }
+  .header .menu a {
+    color: #000;
+  }
+.header .menu a.big {
+  font-weight:700;
+}
+  .header .menu.on {
+    display: flex;
+  }
+  .header .btn_menu {
+    position: relative;
+    z-index: 12;
+    display: flex;
+  }
+  .header .btn_menu.on::before, .header .btn_menu.on::after {
+    position: absolute;
+    top: 50%;
+    background-color: #000;
+  }
+  .header .btn_menu.on::before {
+    transform: rotate(45deg);
+  }
+  .header .btn_menu.on::after {
+    transform: rotate(-45deg);
+  }
+  .mainVisual {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  .mainVisual .tx1 {
+    font-size: 20px;
+  }
+  .mainVisual .tx2 {
+    font-size: 26px;
+    line-height: 1.4;
+  }
+  .mainVisual .tx3 {
+    font-size: 14px;
+  }
+  .mainVisual .tx4 {
+    font-size: 14px;
+  }
+  .con {
+    padding-bottom: 100px;
+  }
+  .con .title {
+    font-size: 30px;
+	@media (max-width: 480px) {
+		font-size: 25px;
+	}
+  }
+  .con .title::after {
+    top: -10px;
+    left: -20px;
+    font-size: 50px;
+  }
+  .con1 .item__wrap {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 60px;
+    margin-top: 70px;
+  }
+  .con2 .item__title {
+    margin-top: 60px;
+    font-size: 20px;
+  }
+  .con3 .item__wrap {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 60px;
+  }
+  .con3 .item__title {
+    font-size: 22px;
+  }
+  .con4 .swiper {
+    margin-top: 60px;
+  }
+  .con5 .tx1 {
+    margin-top: 40px;
+    font-size: 22px;
+	@media (max-width: 480px) {
+		font-size: 19px;
+		font-weight:500;
+	}
+  }
+  .con5 .tx2 {
+    margin-top: 30px;
+    font-size: 18px;
+	@media (max-width: 480px) {
+		margin-top: 20px;
+		font-size: 16px;
+		font-weight:400;
+	}
+  }
+  .con5 .item__wrap {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 50px;
+  }
+  .con5 .item__title {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .con6 .img {
+    margin-top: 60px;
+  }
+  .con7 .map__wrap {
+    flex-direction: column;
+  }
+  .con7 .tx__wrap {
+    width: 100%;
+  }
+  .con7 .tx1 {
+    margin-top: 60px;
+    font-size: 20px;
+  }
+  .con7 .tx2 {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  .con7 .map {
+    margin-top: 40px;
+  }
+  .con8 .swiper {
+    margin-top: 60px;
+  }
+  .con9 .item__wrap {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .con9 .form {
+    margin-top: 40px;
+    padding: 20px;
+  }
+  .con9 .tx1 {
+    margin-top: 0;
+    font-size: 16px;
+  }
+  .con9 .title::after {
+    font-size: 35px;
+  }
+  .con9 .item {
+    margin-left: 0;
+  }
+  .con9 .item__title {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+  .con9 .item__footer {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+  }
+  .con9 .item__footer .link {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .con9 .form__title {
+    font-size: 30px;
+  }
+  .con9 .form__desc {
+    margin-top: 20px;
+  }
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer .title {
+    font-size: 26px;
+  }
+  .side_link {
+    bottom: 50px;
+  }
+  .side_link a {
+    width: 40px;
+    margin-top: 10px;
+  }
+}

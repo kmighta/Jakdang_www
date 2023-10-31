@@ -1,0 +1,733 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  line-height: 1.4;
+  overflow-x: hidden;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  word-break: keep-all;
+}
+img {
+  max-width: 100%;
+}
+input {
+  margin: 0;
+  padding: 0 15px;
+  border: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.w1200 {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 380px;
+  width: 100%;
+  height: 56px;
+  color: #fff;
+  background-color: #f83d3c;
+  border-radius: 15px;
+  font-size: 20px;
+}
+.swiper-pagination {
+  position: relative;
+  inset: 0;
+  margin-top: 20px;
+}
+.swiper-pagination-bullet {
+  background-color: #fff;
+}
+.side_link {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 40px;
+  bottom: 100px;
+  z-index: 10;
+  a {
+    margin-top: 20px;
+  }
+}
+.wrapper {
+  position: relative;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 110px;
+  .menu {
+    display: flex;
+    gap: 40px;
+    a {
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+  .btn_menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    &::before,
+    &::after {
+      display: flex;
+      width: 100%;
+      height: 3px;
+      background-color: #fff;
+      border-radius: 2px;
+      content: "";
+    }
+    span {
+      display: flex;
+      width: 100%;
+      height: 3px;
+      background-color: #fff;
+      border-radius: 2px;
+    }
+  }
+}
+.footer {
+  padding-top: 150px;
+  padding-bottom: 200px;
+  background-color: #141313;
+  color: #fff;
+  text-align: center;
+  .title {
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .red {
+    color: #f83d3c;
+  }
+}
+.mainVisual {
+  padding-top: 220px;
+  padding-bottom: 170px;
+  color: #fff;
+  background-image: url(http://ictedu.co.kr/landing/prj_003/images/mainVisual01.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  .btn {
+    margin-top: 65px;
+  }
+  .tx1 {
+    font-size: 30px;
+    .red {
+      color: #f83d3c;
+    }
+  }
+  .tx2 {
+    margin-top: 40px;
+    font-size: 60px;
+    line-height: 1.2;
+  }
+  .tx3 {
+    margin-top: 50px;
+    font-size: 30px;
+  }
+  .tx4 {
+    margin-top: 15px;
+    font-size: 15px;
+  }
+}
+.con {
+  padding-top: 120px;
+  padding-bottom: 160px;
+  background-color: #141313;
+  color: #fff;
+  .title {
+    position: relative;
+    z-index: 1;
+    font-size: 35px;
+    font-weight: 700;
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: -145px;
+      transform: translateY(-50%);
+      z-index: -1;
+      font-size: 85px;
+      font-weight: 700;
+      color: #2d2d2d;
+    }
+  }
+  .red {
+    color: #f83d3c;
+  }
+}
+.con1 {
+  .title {
+    &::after {
+      content: "OUR RESULTS";
+    }
+  }
+  .item {
+    text-align: center;
+    &__wrap {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 70px;
+      margin-top: 100px;
+    }
+    &__title {
+      margin-top: 30px;
+      font-size: 25px;
+      font-weight: 700;
+    }
+    &__desc {
+      margin-top: 20px;
+      font-size: 15px;
+    }
+  }
+}
+.con2 {
+  background-image: url(http://ictedu.co.kr/landing/prj_003/images/con2_1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .title {
+    &::after {
+      content: "CURRICULEM";
+    }
+  }
+  .btn {
+    margin-top: 40px;
+  }
+  .item {
+    &__title {
+      margin-top: 140px;
+      font-size: 30px;
+      font-weight: 500;
+    }
+    &__desc {
+      margin-bottom: 10px;
+      font-size: 15px;
+      &-list {
+        margin-left: 15px;
+        margin-top: 55px;
+      }
+      &-footer {
+        margin-left: 15px;
+        margin-top: 40px;
+      }
+    }
+  }
+  .price {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    &__text {
+      margin-right: 45px;
+      font-size: 30px;
+    }
+    &__number {
+      font-size: 40px;
+      &-text {
+        font-size: 15px;
+      }
+    }
+  }
+}
+.con3 {
+  .title {
+    &::after {
+      content: "REVIEWS";
+    }
+  }
+  .item {
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient(to left, #000, #494848);
+    &.link {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: linear-gradient(to left, #361a1a, #494848);
+      color: #fff;
+      .dib {
+        display: inline-block;
+      }
+      .item__desc {
+        font-size: 20px;
+      }
+    }
+    &__wrap {
+      margin-top: 140px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 50px;
+    }
+    &__title {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 1.2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    &__user {
+      margin-top: 10px;
+      font-size: 15px;
+      text-align: right;
+    }
+    &__desc {
+      margin-top: 25px;
+      font-size: 15px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
+.con4 {
+  background-color: #000;
+  .title {
+    &::after {
+      content: "STUDENT WORK";
+    }
+  }
+  .swiper {
+    margin-top: 140px;
+  }
+  .swiper-slide {
+    img {
+      width: 100%;
+    }
+  }
+}
+.con5 {
+  background-image: url(http://ictedu.co.kr/landing/prj_003/images/con5_1.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  .title {
+    &::after {
+      content: "EMPLOYMENT";
+      color: #4b4b49;
+    }
+  }
+  .tx1 {
+    margin-top: 110px;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .tx2 {
+    margin-top: 40px;
+    font-size: 25px;
+  }
+  .item {
+    &__wrap {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 45px;
+      margin-top: 80px;
+    }
+    &__title {
+      margin-top: 35px;
+      font-size: 22px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+    &__user {
+      margin-top: 20px;
+      font-size: 15px;
+      text-align: right;
+    }
+    .img {
+      position: relative;
+      padding-top: 50%;
+      border-radius: 10px;
+      overflow: hidden;
+      img {
+        position: absolute;
+        inset: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.con6 {
+  background-image: url(http://ictedu.co.kr/landing/prj_003/images/con6_2.png);
+  background-repeat: no-repeat;
+  background-position: right 0;
+  background-size: cover;
+  .title {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .btn {
+    margin: 30px auto 0;
+  }
+  .img {
+    margin-top: 110px;
+  }
+}
+.con7 {
+  background-color: #000;
+  .title {
+    &::after {
+      content: "LOCATION";
+    }
+  }
+  .map {
+    &__wrap {
+      display: flex;
+    }
+  }
+  .tx__wrap {
+    width: 50%;
+  }
+  .tx1 {
+    margin-top: 220px;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .tx2 {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+}
+.con8 {
+  .title {
+    &::after {
+      content: "LOCATION";
+    }
+  }
+  .swiper {
+    margin-top: 90px;
+  }
+}
+.con9 {
+  background-color: #000;
+  .title {
+    &::after {
+      content: "ONLINE CUNSULTING";
+    }
+  }
+  .tx1 {
+    max-width: 450px;
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  .item {
+    margin-left: 20px;
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+    &__title {
+      display: flex;
+      align-items: center;
+      height: 37px;
+      margin-top: 70px;
+      padding-left: 50px;
+      background-image: url(http://ictedu.co.kr/landing/prj_003/images/con9_1.png);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain;
+      font-size: 20px;
+    }
+    &__list {
+      margin-top: 20px;
+      margin-left: 35px;
+    }
+    &__desc {
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+    &__footer {
+      display: flex;
+      align-items: center;
+      margin-top: 85px;
+      .text {
+        display: flex;
+        align-items: center;
+        height: 25px;
+        padding-left: 35px;
+        background-image: url(http://ictedu.co.kr/landing/prj_003/images/con9_2.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain;
+        font-size: 15px;
+        .red {
+          display: contents;
+        }
+      }
+      .link {
+        display: flex;
+        align-items: center;
+        height: 20px;
+        margin-left: 50px;
+        padding-left: 30px;
+        color: #fff;
+        background-image: url(http://ictedu.co.kr/landing/prj_003/images/con9_3.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain;
+        font-size: 15px;
+      }
+    }
+  }
+  .form {
+    max-width: 440px;
+    width: 100%;
+    padding: 50px;
+    border-radius: 20px;
+    background: linear-gradient(to left, #000, #494848);
+    text-align: center;
+    .input__check {
+      display: flex;
+      align-items: center;
+      input {
+        margin-right: 10px;
+      }
+      a {
+        margin-left: 10px;
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+    .input__text {
+      margin-bottom: 20px;
+      text-align: left;
+      input {
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+      }
+      .label {
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+    }
+    &__title {
+      font-size: 35px;
+      font-weight: 700;
+    }
+    &__desc {
+      margin-top: 35px;
+      margin-bottom: 35px;
+      font-size: 16px;
+    }
+    .btn {
+      width: 100%;
+      margin-top: 30px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    z-index: 2;
+    height: 80px;
+    .menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 11;
+      background-color: #fff;
+      a {
+        color: #000;
+      }
+      &.on {
+        display: flex;
+      }
+    }
+    .btn_menu {
+      position: relative;
+      z-index: 12;
+      display: flex;
+      &.on {
+        &::before,
+        &::after {
+          position: absolute;
+          top: 50%;
+          background-color: #000;
+        }
+        &::before {
+          transform: rotate(45deg);
+        }
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  .mainVisual {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  .mainVisual .tx1 {
+    font-size: 20px;
+  }
+  .mainVisual .tx2 {
+    font-size: 26px;
+    line-height: 1.4;
+  }
+  .mainVisual .tx3 {
+    font-size: 14px;
+  }
+  .mainVisual .tx4 {
+    font-size: 14px;
+  }
+  .con {
+    padding-bottom: 100px;
+  }
+  .con .title {
+    font-size: 30px;
+  }
+  .con .title::after {
+    top: -10px;
+    left: -20px;
+    font-size: 50px;
+  }
+  .con1 .item__wrap {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 60px;
+    margin-top: 70px;
+  }
+  .con2 .item__title {
+    margin-top: 60px;
+    font-size: 20px;
+  }
+  .con3 .item__wrap {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 60px;
+  }
+  .con3 .item__title {
+    font-size: 22px;
+  }
+  .con4 .swiper {
+    margin-top: 60px;
+  }
+  .con5 .tx1 {
+    margin-top: 60px;
+    font-size: 22px;
+  }
+  .con5 .tx2 {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  .con5 .item__wrap {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 50px;
+  }
+  .con5 .item__title {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .con6 .img {
+    margin-top: 60px;
+  }
+  .con7 .map__wrap {
+    flex-direction: column;
+  }
+  .con7 .tx__wrap {
+    width: 100%;
+  }
+  .con7 .tx1 {
+    margin-top: 60px;
+    font-size: 20px;
+  }
+  .con7 .tx2 {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  .con7 .map {
+    margin-top: 40px;
+  }
+  .con8 .swiper {
+    margin-top: 60px;
+  }
+  .con9 .item__wrap {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .con9 .form {
+    margin-top: 40px;
+    padding: 20px;
+  }
+  .con9 .tx1 {
+    margin-top: 0;
+    font-size: 16px;
+  }
+  .con9 .title::after {
+    font-size: 35px;
+  }
+  .con9 .item {
+    margin-left: 0;
+  }
+  .con9 .item__title {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+  .con9 .item__footer {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+  }
+  .con9 .item__footer .link {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .con9 .form__title {
+    font-size: 30px;
+  }
+  .con9 .form__desc {
+    margin-top: 20px;
+  }
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer .title {
+    font-size: 26px;
+  }
+  .side_link {
+    bottom: 50px;
+    a {
+      width: 40px;
+      margin-top: 10px;
+    }
+  }
+}

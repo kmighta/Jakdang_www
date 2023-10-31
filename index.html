@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+<link rel="stylesheet" href="/common/css/style.css?v230704" />
+<link rel="stylesheet" href="/common/css/mo/style.css?v230704" />
+<link rel="stylesheet" href="/common/css/csshake-slow.min.css" />
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="/common/images/main/jakdang_ico_001.png" type="image/x-icon" />
+<title>(주)작당연구소</title>
+<script type="text/javascript" src="/common/js/jquery.min.js"></script>
+<script type="text/javascript" src="/common/js/jquery.rwdImageMaps.min.js"></script>
+<style type="text/css">
+
+div#pc_ver { display:block; }
+div#mobile_ver { display:none; }
+@media all and (max-width: 780px) {
+div#pc_ver { display:none; }
+div#mobile_ver { display:block; }
+}
+</style>
+<style type="text/css">
+	* { padding:0; margin:0; }
+	html, body {
+	    height: 100%;
+	}
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+		font-family:'Noto Sans KR', sans-serif;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+
+	.bg_market		{ background:#4FC0E9; }
+	.bg_creative		{ background:#FFE700; }
+	.bg_academy	{ background:#03894C; }
+	.bg_link				{ background:#FF9A00; }
+	.bg_white			{ background:#FFFFFF; }
+	.bg_not				{ background:transparent; }
+
+	div.wrap									{ max-width:1920px; min-height:600px; width:100%; height:100%; margin:0 auto; padding:0; overflow:hidden; }
+	div.contents								{ width:100%; height:100%; margin:0 auto; padding:0; }
+	div.contents div.main				{ float:left; width:100%; height:100%; margin:0 auto; padding:0; }
+
+	div.contents div.main.blank_ft	{ width:3.6%; }
+	div.contents div.main.title			{ width:36.8%; }
+	div.contents div.main.blank_se	{ width:3.3%; }
+	div.contents div.main.cercle		{ width:11.9%; height:100%;}
+	div.contents div.main.blank_th	{ width:4.3%; }
+	div.contents div.main.l_menu		{ width:7.05%; border-right:1px solid #000000; }
+
+	div.contents div.main.title { position:relative; }
+	div.contents div.main.title a#top_logo { position:absolute; display:block; top:25px; max-width:369px; max-height:72px; width:100%; }
+	div.contents div.main.title a#top_logo img { display:block; max-width:369px; max-height:72px; width:100%; }
+
+	div.contents div.main.title ul li img#main_title_ico { display:inline-block; margin:30.2% 0% 0% 4%; }
+	div.contents div.main.title ul li img#main_title_eng { display:block; max-width:704px; max-height:72px; width:100%; margin:3% 0% 3% 0%; }
+
+	div.contents div.main.l_menu.ft    { border-left:1px solid #000000; }
+	div.contents div.main.l_menu a	{ display:block; width:100%; height:100%; display:flex; justify-content:flex-end; align-items:center; flex-direction: column; }
+	div.contents div.main.l_menu a div { width:100%; margin-bottom:20.5%; }
+	div.contents div.main.l_menu a div ul li { text-align:center; }
+	div.contents div.main.l_menu a div ul li img { margin:0 auto; }
+
+	div.contents div.main.l_menu a div ul li span { font-weight:600; writing-mode:vertical-lr; font-size:3.5em; margin:25% 0% 30% 0%; }
+	div.contents div.main.l_menu a div ul li.arrow { width:66%; padding-bottom:65.5%; margin:0 auto; border:1px solid #000000; border-radius:50%; position:relative; }
+	div.contents div.main.l_menu a div ul li.arrow.ft { width:66.2%; padding-bottom:66.2%; margin:0 auto; margin-bottom:0.2%; border:1px solid #000000; border-radius:50%; position:relative; }
+	div.contents div.main.l_menu a div ul li.arrow div { position:absolute; display:block; top:0; width:100%; height:100%; border:none; border-radius:50%; display:flex; justify-content:center; align-items:center; flex-direction: column; }
+	div.contents div.main.l_menu a div ul li.arrow div img { width:34.8%; margin-bottom:6% }
+	div.contents div.main.l_menu a div ul li.arrow.ft div img { width:35%; }
+
+	div.contents div.main.l_menu a div ul li img#market_menu_ico { padding:20.5% 18% 0% 18%; }
+	div.contents div.main.l_menu a div ul li img#creative_menu_ico { padding:20.5% 14.2% 0% 14.2%; }
+	div.contents div.main.l_menu a div ul li img#academy_menu_ico { padding:20.5% 8.5% 0% 8.5%; }
+	div.contents div.main.l_menu a div ul li img#link_menu_ico { padding:20.5% 18% 0% 18%; }
+
+	div.contents div.main.l_menu a.market:hover		{ background:#4FC0E9; }
+	div.contents div.main.l_menu a.creative:hover	{ background:#FFE700; }
+	div.contents div.main.l_menu a.academy:hover	{ background:#03894C; }
+	div.contents div.main.l_menu a.link:hover			{ background:#FF9A00; }
+
+	div.contents div.main.cercle#cercle_1920_ft { display:block; }
+	div.contents div.main.cercle#cercle_1920_lt { display:block; }
+	div.contents div.main.cercle#cercle_1360 { display:none; }
+
+	div.contents div.main.cercle ul { width:100%; height:100%; display:flex; justify-content:center; align-items:center; flex-direction: column; }
+	div.contents div.main.cercle ul li { position:relative; width:100%; padding-bottom:100%; display:flex; justify-content:center; align-items:center; flex-direction: column; }
+	div.contents div.main.cercle ul li a { position:absolute; display:block; top:0; width:100%; height:100%; border:1px solid #000000; border-radius:50%; display:flex; justify-content:center; align-items:center; flex-direction: column; }
+	div.contents div.main.cercle ul li a.contact_us:hover, div.contents div.main.cercle ul li a.about_us:hover { background:#FFE700; }
+	
+	div.contents div.main.cercle ul li a.market div		{ background:#4FC0E9; }
+	div.contents div.main.cercle ul li a.creative div		{ background:#FFE700; }
+	div.contents div.main.cercle ul li a.academy div	{ background:#03894C; }
+	div.contents div.main.cercle ul li a.link div			{ background:#FF9A00; }
+
+	div.contents div.main.cercle ul li a.market:hover		{ background:#4FC0E9; }
+	div.contents div.main.cercle ul li a.creative:hover		{ background:#FFE700; }
+	div.contents div.main.cercle ul li a.academy:hover	{ background:#03894C; }
+	div.contents div.main.cercle ul li a.link:hover			{ background:#FF9A00; }
+
+	div.contents div.main.cercle ul li a div:hover { background:#FFFFFF; }
+	div.contents div.main.cercle ul li a div.in_not { background:#FFFFFF; }
+
+	div.contents div.main.cercle ul li a div { width:70%; height:70%; border:1px solid #000000; border-radius:50%; display:flex; justify-content:center; align-items:center; flex-direction: column; }
+	div.contents div.main.cercle ul li a div img.ico_img { width:100%; height:100%; }
+	div.contents div.main.cercle ul li a div img#market_ico			{ max-width:101px; max-height:86px; }
+	div.contents div.main.cercle ul li a div img#creative_ico		{ max-width:77px; max-height:92px; }
+	div.contents div.main.cercle ul li a div img#academy_ico		{ max-width:113px; max-height:91px; }
+	div.contents div.main.cercle ul li a div img#link_ico				{ max-width:127px; max-height:67px; }
+
+	div.contents div.main.cercle ul li div.arrow { position:absolute; display:block; top:0; width:100%; height:100%; border:none; border-radius:50%; display:flex; justify-content:center; align-items:center; flex-direction: column; }
+	div.contents div.main.cercle ul li div.arrow img.top { max-width:33px; max-height:162px; height:72%; margin-left:15%; }
+	div.contents div.main.cercle ul li div.arrow img.bottom { max-width:33px; max-height:162px; height:72%; margin-right:15%; }
+
+	@media all and (min-width:2561px) and (max-width:2715px) {
+		div.wrap { max-width:2715px; }
+
+		@media all and (max-height:970px) {
+			div.wrap { max-width:1920px; }
+		}
+
+	}
+
+	@media all and (min-width:1921px) and (max-width:2560px) {
+		div.wrap { max-width:2560px; }
+
+		@media all and (max-height:970px) {
+			div.wrap { max-width:1920px; }
+		}
+
+	}
+
+	@media all and (min-width:1681px) and (max-width:1920px) {
+		div.wrap { max-width:1920px; }
+
+		@media all and (max-height:800px) {
+			div.contents div.main.title			{ width:37.2%; }
+			div.contents div.main.blank_se	{ width:4.5%; }
+			div.contents div.main.cercle		{ width:11%; height:100%;}
+			div.contents div.main.blank_th	{ width:4.5%; }
+		}
+	}
+
+	@media all and (min-width:1367px) and (max-width:1680px) {
+		div.wrap { max-width:1680px; }
+
+		div.contents div.main.title			{ width:35.8%; }
+		div.contents div.main.blank_se	{ width:3.1%; }
+		div.contents div.main.cercle		{ width:13.1%; height:100%;}
+		div.contents div.main.blank_th	{ width:3.3%; }
+		div.contents div.main.l_menu		{ width:7%; }
+
+		@media all and (max-height:800px) {
+			div.contents div.main.title			{ width:37.8%; }
+			div.contents div.main.blank_se	{ width:4.1%; }
+			div.contents div.main.cercle		{ width:11.6%; height:100%;}
+
+			div.contents div.main.l_menu a div ul li span { font-size:3em; margin:25% 0% 30% 0%; }
+		}
+
+	}
+
+	@media all and (min-width:1281px) and (max-width:1366px) {
+		div.wrap { max-width:1366px; }
+
+		div.contents div.main.blank_se	{ width:7.55%; }
+		div.contents div.main.blank_th	{ width:8.55%; }
+		div.contents div.main.cercle		{ width:11.5%; height:100%;}
+		div.contents div.main.l_menu		{ width:8%; }
+
+		div.contents div.main.cercle#cercle_1920_ft { display:none; }
+		div.contents div.main.cercle#cercle_1920_lt { display:none; }
+		div.contents div.main.cercle#cercle_1360	{ display:block; }
+		div.contents div.main.cercle#cercle_1360 ul li#arrow_1280 { display:none; }
+		div.contents div.main.cercle#cercle_1360 ul li a#market_o		{ margin-left:65%; }
+		div.contents div.main.cercle#cercle_1360 ul li a#creative_o		{ margin-left:-40%; }
+		div.contents div.main.cercle#cercle_1360 ul li a#link_o			{ margin-left:82%; }
+		div.contents div.main.cercle#cercle_1360 ul li a#academy_o	{ margin-left:-20%; }
+
+		@media all and (max-height:800px) {
+			div.contents div.main.l_menu a div ul li span { font-size:3em; margin:25% 0% 30% 0%; }
+		}
+
+	}
+	@media all and (min-width:1201px) and (max-width:1280px) {
+
+		div.wrap { max-width:1280px; }
+
+		div.contents div.main.blank_se	{ width:7.55%; }
+		div.contents div.main.blank_th	{ width:8.55%; }
+		div.contents div.main.cercle		{ width:11.5%; height:100%;}
+		div.contents div.main.l_menu		{ width:8%; }
+
+		div.contents div.main.cercle#cercle_1920_ft { display:none; }
+		div.contents div.main.cercle#cercle_1920_lt { display:none; }
+		div.contents div.main.cercle#cercle_1360	{ display:block; }
+		div.contents div.main.cercle#cercle_1360 ul li#arrow_1280		{ display:block; }
+		div.contents div.main.cercle#cercle_1360 ul li a#market_o		{ margin-left:65%; }
+		div.contents div.main.cercle#cercle_1360 ul li a#creative_o		{ margin-left:-40%; }
+		div.contents div.main.cercle#cercle_1360 ul li a#link_o			{ margin-left:82%; }
+		div.contents div.main.cercle#cercle_1360 ul li a#academy_o	{ margin-left:-20%; }
+
+		div.contents div.main.l_menu a div ul li span { font-size:3em; margin:25% 0% 30% 0%; }
+
+		@media all and (max-height:960px) {
+			div.contents div.main.cercle#cercle_1360 ul li#arrow_1280		{ display:block; }
+		}
+
+		@media all and (max-height:770px) {
+			div.contents div.main.cercle#cercle_1360 ul li#arrow_1280		{ display:block; }
+		}
+
+		@media all and (max-height:720px) {
+			div.contents div.main.blank_se	{ width:7.8%; }
+			div.contents div.main.blank_th	{ width:8.8%; }
+			div.contents div.main.cercle		{ width:11.25%; height:100%;}
+			div.contents div.main.l_menu		{ width:7.9375%; }
+
+			div.contents div.main.cercle#cercle_1360 ul li#arrow_1280		{ display:none; }
+		}
+
+	}
+	@media all and (min-width:801px) and (max-width:1200px) {
+		div.wrap { max-width:1200px; min-height:600px; }
+
+		div.contents div.main.blank_se	{ width:7.25%; }
+		div.contents div.main.blank_th	{ width:8.35%; }
+		div.contents div.main.cercle		{ width:12%; height:100%;}
+		div.contents div.main.l_menu		{ width:8%; }
+
+		div.contents div.main.cercle#cercle_1920_ft { display:none; }
+		div.contents div.main.cercle#cercle_1920_lt { display:none; }
+		div.contents div.main.cercle#cercle_1360	{ display:block; }
+		div.contents div.main.cercle#cercle_1360 ul li#arrow_1280		{ display:block; }
+		div.contents div.main.cercle#cercle_1360 ul li a#market_o		{ margin-left:65%; }
+		div.contents div.main.cercle#cercle_1360 ul li a#creative_o		{ margin-left:-40%; }
+		div.contents div.main.cercle#cercle_1360 ul li a#link_o			{ margin-left:82%; }
+		div.contents div.main.cercle#cercle_1360 ul li a#academy_o	{ margin-left:-20%; }
+
+		div.contents div.main.l_menu a div ul li span { font-size:3em; margin:25% 0% 30% 0%; }
+
+		@media all and (max-height:755px) {
+			div.contents div.main.blank_se	{ width:7.5%; }
+			div.contents div.main.blank_th	{ width:8.6%; }
+			div.contents div.main.cercle		{ width:12.5%; height:100%;}
+			div.contents div.main.l_menu		{ width:7.75%; }
+
+			div.contents div.main.cercle#cercle_1360 ul li#arrow_1280		{ display:block; }
+
+			div.contents div.main.l_menu a div ul li span { font-size:2.5em; margin:25% 0% 30% 0%; }
+		}
+		@media all and (max-height:665px) {
+			div.wrap { min-height:600px; }
+
+			div.contents div.main.blank_se	{ width:8.25%; }
+			div.contents div.main.blank_th	{ width:9.35%; }
+			div.contents div.main.cercle		{ width:12%; height:100%;}
+			div.contents div.main.l_menu		{ width:7.5%; }
+
+			div.contents div.main.cercle#cercle_1360 ul li#arrow_1280		{ display:block; }
+
+			div.contents div.main.l_menu a div ul li span { font-size:2.5em; margin:25% 0% 30% 0%; }
+		}
+		@media all and (max-height:555px) {
+			div.wrap { min-height:500px; }
+
+			div.contents div.main.blank_se	{ width:8.75%; }
+			div.contents div.main.blank_th	{ width:9.85%; }
+			div.contents div.main.cercle		{ width:11%; height:100%;}
+			div.contents div.main.l_menu		{ width:7.5%; }
+
+			div.contents div.main.cercle#cercle_1360 ul li#arrow_1280		{ display:none; }
+
+			div.contents div.main.l_menu a div ul li span { font-size:2.5em; margin:25% 0% 30% 0%; }
+		}
+	}
+
+
+	@media all and (min-width:721px) and (max-width:800px) {
+		div.wrap { max-width:800px; min-height:450px; }
+
+		div.contents div.main.blank_se	{ width:7.25%; }
+		div.contents div.main.blank_th	{ width:8.35%; }
+		div.contents div.main.cercle		{ width:12%; height:100%;}
+		div.contents div.main.l_menu		{ width:8%; }
+
+		div.contents div.main.cercle#cercle_1920_ft { display:none; }
+		div.contents div.main.cercle#cercle_1920_lt { display:none; }
+		div.contents div.main.cercle#cercle_1360	{ display:block; }
+		div.contents div.main.cercle#cercle_1360 ul li#arrow_1280		{ display:block; }
+		div.contents div.main.cercle#cercle_1360 ul li a#market_o		{ margin-left:65%; }
+		div.contents div.main.cercle#cercle_1360 ul li a#creative_o		{ margin-left:-40%; }
+		div.contents div.main.cercle#cercle_1360 ul li a#link_o			{ margin-left:82%; }
+		div.contents div.main.cercle#cercle_1360 ul li a#academy_o	{ margin-left:-20%; }
+
+		div.contents div.main.l_menu a div ul li span { font-size:2.2em; margin:25% 0% 30% 0%; }
+
+		@media all and (max-height:500px) {
+			div.wrap { min-height:400px; }
+
+			div.contents div.main.blank_se	{ width:8.5%; }
+			div.contents div.main.blank_th	{ width:9.6%; }
+			div.contents div.main.cercle		{ width:11.5%; height:100%;}
+			div.contents div.main.l_menu		{ width:7.5%; }
+
+			div.contents div.main.cercle#cercle_1360 ul li#arrow_1280		{ display:block; }
+
+			div.contents div.main.l_menu a div ul li span { font-size:2em; margin:25% 0% 30% 0%; }
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	div#mobile_ver div.container div.main.l_menu.ft    { border-left:1px solid #000000; }
+	div#mobile_ver div.container div.main.l_menu a	{ display:block; width:100%; border:1px solid #000000; /*height:100%;*/ display:flex; justify-content:center; align-items:center; flex-direction: column; }
+	div#mobile_ver div.container div.main.l_menu a div { width:100%; }
+	div#mobile_ver div.container div.main.l_menu a div ul li { text-align:center; float:left; display:flex; justify-content:center; align-items:center; flex-direction: column;}
+	div#mobile_ver div.container div.main.l_menu a div ul li img { margin:0 auto; }
+
+	div#mobile_ver div.container div.main.l_menu a div ul li span { font-weight:600; font-size:20px; margin:25% 0% 30% 0%; }
+	div#mobile_ver div.container div.main.l_menu a div ul li.arrow { width:6.5%; padding-bottom:6.5%; margin:0 auto; border:1px solid #000000; border-radius:50%; position:relative; }
+	div#mobile_ver div.container div.main.l_menu a div ul li.arrow.ft { width:66.2%; padding-bottom:66.2%; margin:0 auto; margin-bottom:0.2%; border:1px solid #000000; border-radius:50%; position:relative; }
+	div#mobile_ver div.container div.main.l_menu a div ul li.arrow div { position:absolute; display:block; top:0; width:100%; height:100%; border:none; border-radius:50%; display:flex; justify-content:center; align-items:center; flex-direction: column; }
+	div#mobile_ver div.container div.main.l_menu a div ul li.arrow div img { width:34.8%; margin-bottom:6% }
+	div#mobile_ver div.container div.main.l_menu a div ul li.arrow.ft div img { width:35%; }
+/*
+	div#mobile_ver div.container div.main.l_menu a div ul li img#market_menu_ico { padding:20.5% 18% 0% 18%; }
+	div#mobile_ver div.container div.main.l_menu a div ul li img#creative_menu_ico { padding:20.5% 14.2% 0% 14.2%; }
+	div#mobile_ver div.container div.main.l_menu a div ul li img#academy_menu_ico { padding:20.5% 8.5% 0% 8.5%; }
+	div#mobile_ver div.container div.main.l_menu a div ul li img#link_menu_ico { padding:20.5% 18% 0% 18%; }
+*/
+	div#mobile_ver div.container div.main.l_menu a.market:hover		{ background:#4FC0E9; }
+	div#mobile_ver div.container div.main.l_menu a.creative:hover	{ background:#FFE700; }
+	div#mobile_ver div.container div.main.l_menu a.academy:hover	{ background:#03894C; }
+	div#mobile_ver div.container div.main.l_menu a.link:hover			{ background:#FF9A00; }
+
+
+@media all and (max-width:500px) {	
+	div#mobile_ver { overflow:hidden; }
+}
+
+
+</style>
+
+
+
+
+</head>
+<body>
+
+<div class="wrap" id="pc_ver">
+	<div class="contents">
+		<div class="main blank_ft"></div>
+		<div class="main title" style="display:flex; justify-content:center; flex-direction: column;">
+			<a href="/" id="top_logo"><img src="/common/images/pc/logo.png" class="shake-slow shake-a"></a>
+			<ul>
+				<li>
+					<span style="display:block; font-size:50px; font-weight:700;">
+						Welcome to
+						<img src="/common/images/main/jakdang_ico_001.png" class="shake-slow"  id="main_title_ico">
+					</span>
+				</li>
+				<li>
+					<img src="/common/images/main/jakdang_tit_logo.png" class="shake-slow" id="main_title_eng">
+				</li>
+				<li>
+					<span style="font-size:20px; font-weight:500;">창작 인재들의 작당 연구를 위한 온·오프라인 아지트</span>
+				</li>
+			</ul>
+		</div>
+		<div class="main blank_se"></div>
+		<div class="main cercle" id="cercle_1360">
+			<ul>
+				<li>
+					<a href="/market.html" class="market" id="market_o" alt="작당마켓" title="작당마켓">
+						<div>
+							<img src="/common/images/main/jakdang_ico_002.png" class="ico_img shake-slow shake-a" id="market_ico">
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="/creative_office.html" class="creative" id="creative_o" alt="작당창작소" title="작당창작소">
+						<div>
+							<img src="/common/images/main/jakdang_ico_003.png" class="ico_img shake-slow shake-a" id="creative_ico">
+						</div>
+					</a>
+				</li>
+				<li id="arrow_1280">
+					<div class="arrow">
+						<img src="/common/images/pc/main_img_arrow_top.png" class="bottom">
+					</div>
+				</li>
+				<li>
+					<a href="/link.html" class="link" id="link_o" alt="작당링크" title="작당링크">
+						<div>
+							<img src="/common/images/pc/main_jakdang_ico_008.png" class="ico_img shake-slow shake-a" id="link_ico">
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="/academy.html" class="academy" id="academy_o" alt="작당아카데미" title="작당아카데미">
+						<div>
+							<img src="/common/images/main/jakdang_ico_004.png" class="ico_img shake-slow shake-a" id="academy_ico">
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="main cercle" id="cercle_1920_ft">
+			<ul>
+				<li>
+					<a href="/market.html" class="market" id="market_o" alt="작당마켓" title="작당마켓">
+						<div>
+							<img src="/common/images/main/jakdang_ico_002.png" class="ico_img shake-slow shake-a" id="market_ico">
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="/creative_office.html" class="creative" id="creative_o">
+						<div>
+							<img src="/common/images/main/jakdang_ico_003.png" class="ico_img shake-slow shake-a" id="creative_ico">
+						</div>
+					</a>
+				</li>
+				<li>
+					<div class="arrow">
+						<img src="/common/images/pc/main_img_arrow_bottom.png" class="top">
+					</div>
+				</li>
+				<li>
+					<a href="/contactus.html" class="contact_us" alt="Contact Us" title="Contact Us">
+						Contact Us
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="main cercle" id="cercle_1920_lt">
+			<ul>
+				<li>
+					<a href="/about.html" class="about_us" alt="About Us" title="About Us">
+						About Us
+					</a>
+				</li>
+				<li>
+					<div class="arrow">
+						<img src="/common/images/pc/main_img_arrow_top.png" class="bottom">
+					</div>
+				</li>
+				<li>
+					<a href="/link.html" class="link" id="link_o">
+						<div>
+							<img src="/common/images/pc/main_jakdang_ico_008.png" class="ico_img shake-slow shake-a" id="link_ico">
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="" class="academy" id="academy_o">
+						<div>
+							<img src="/common/images/main/jakdang_ico_004.png" class="ico_img shake-slow shake-a" id="academy_ico">
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="main blank_th"></div>
+		<div class="main l_menu ft">
+			<a href="/creative_office.html" class="creative" id="creative_menu" alt="작당창작소" title="작당창작소">
+				<div>
+					<ul>
+						<li><img src="/common/images/main/jakdang_ico_005.png" class="ico_img shake-slow shake-a" id="creative_menu_ico"></li>
+						<li>
+							<span>작당창작소</span>
+						</li>
+						<li class="arrow ft">
+							<div>
+								<img src="/common/images/pc/main_img_arrow_small.png">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</a>
+		</div>
+		<div class="main l_menu">
+			<a href="/academy.html" class="academy" id="academy_menu" alt="작당아카데미" title="작당아카데미">
+				<div>
+					<ul>
+						<li><img src="/common/images/main/jakdang_ico_006.png" class="ico_img shake-slow shake-a" id="academy_menu_ico"></li>
+						<li>
+							<span>작당아카데미</span>
+						</li>
+						<li class="arrow">
+							<div>
+								<img src="/common/images/pc/main_img_arrow_small.png">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</a>
+		</div>
+		<div class="main l_menu">
+			<a href="/market.html" class="market" id="market_menu" alt="작당마켓" title="작당마켓">
+				<div>
+					<ul>
+						<li><img src="/common/images/main/jakdang_ico_007.png" class="ico_img shake-slow shake-a" id="market_menu_ico"></li>
+						<li>
+							<span>작당마켓</span>
+						</li>
+						<li class="arrow">
+							<div>
+								<img src="/common/images/pc/main_img_arrow_small.png">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</a>			
+		</div>
+		<div class="main l_menu">
+			<a href="/link.html" class="link" id="link_menu" alt="작당링크" title="작당링크">
+				<div>
+					<ul>
+						<li><img src="/common/images/pc/main_jakdang_ico_009.png" class="ico_img shake-slow shake-a" id="link_menu_ico"></li>
+						<li>
+							<span>작당링크</span>
+						</li>
+						<li class="arrow">
+							<div>
+								<img src="/common/images/pc/main_img_arrow_small.png">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</a>				
+		</div>	
+	</div>
+</div>
+
+
+<script>
+$(".market").hover(
+	function () {
+		$(".market").addClass("bg_market");
+		$(".market div").addClass("in_not");
+	},
+	function () {
+		$(".market").removeClass("bg_market");
+		$(".market div").removeClass("in_not");
+		
+	}
+);
+$(".creative").hover(
+	function () {
+		$(".creative").addClass("bg_creative");
+		$(".creative div").addClass("in_not");
+	},
+	function () {
+		$(".creative").removeClass("bg_creative");
+		$(".creative div").removeClass("in_not");
+		
+	}
+);
+$(".link").hover(
+	function () {
+		$(".link").addClass("bg_link");
+		$(".link div").addClass("in_not");
+	},
+	function () {
+		$(".link").removeClass("bg_link");
+		$(".link div").removeClass("in_not");
+		
+	}
+);
+$(".academy").hover(
+	function () {
+		$(".academy").addClass("bg_academy");
+		$(".academy div").addClass("in_not");
+	},
+	function () {
+		$(".academy").removeClass("bg_academy");
+		$(".academy div").removeClass("in_not");
+		
+	}
+);
+
+
+
+
+$("#market_ico, #market_menu_ico").hover(
+	function () {
+		$("#market_ico, #market_menu_ico").addClass("shake-slow_on");
+		$("#market_ico, #market_menu_ico").addClass("shake_on-a");
+	},
+	function () {
+		$("#market_ico, #market_menu_ico").removeClass("shake-slow_on");
+		$("#market_ico, #market_menu_ico").removeClass("shake_on-a");
+		
+	}
+);
+
+$("#creative_ico, #creative_menu_ico").hover(
+	function () {
+		$("#creative_ico, #creative_menu_ico").addClass("shake-slow_on");
+		$("#creative_ico, #creative_menu_ico").addClass("shake_on-a");
+	},
+	function () {
+		$("#creative_ico, #creative_menu_ico").removeClass("shake-slow_on");
+		$("#creative_ico, #creative_menu_ico").removeClass("shake_on-a");
+	}
+);
+
+$("#link_ico, #link_menu_ico").hover(
+	function () {
+		$("#link_ico, #link_menu_ico").addClass("shake-slow_on");
+		$("#link_ico, #link_menu_ico").addClass("shake_on-a");
+	},
+	function () {
+		$("#link_ico, #link_menu_ico").removeClass("shake-slow_on");
+		$("#link_ico, #link_menu_ico").removeClass("shake_on-a");
+	}
+);
+
+$("#academy_ico, #academy_menu_ico").hover(
+	function () {
+		$("#academy_ico, #academy_menu_ico").addClass("shake-slow_on");
+		$("#academy_ico, #academy_menu_ico").addClass("shake_on-a");
+	},
+	function () {
+		$("#academy_ico, #academy_menu_ico").removeClass("shake-slow_on");
+		$("#academy_ico, #academy_menu_ico").removeClass("shake_on-a");
+	}
+);
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="wrapper" id="mobile_ver" style="height:100vh;">
+      <div class="header w1200">
+        <a href="/">
+          <img src="/common/images/logo_mo.png" alt="" />
+        </a>
+        <div class="menu">
+			<img src="/common/images/mobile/mo_menu_0705_v4.png" style="max-width:477px; max-height:788px; width:100%; padding:0em 1.5em 4em 1.5em;" usemap="#menu_Map">
+        </div>
+        <a href="javascript:void(0);" class="btn_menu">
+          <span></span>
+        </a>
+      </div>
+
+
+
+      <div class="container" style="overflow:hidden">
+
+
+
+
+
+
+
+
+        <div class="con5 con" style="padding:5.5em 0em 0em 0em">
+          <div class="w1200" style="text-align:center;">
+		  	<ul style="margin:0 auto;">
+				<li><img src="/common/images/mobile/mo_main_menu.png" style="max-width:648px; max-height:1016px; width:100%; margin:2.5em 0em 0em 0em;" usemap="#main_Map"></li>
+				<!--
+				<li><img src="/common/images/mobile/mo_main_002.png" style="margin:1.5em 0em 1em 0em;"></li>
+				<li><img src="/common/images/mobile/mo_main_003.png" style="margin:1.5em 0em 1em 0em;"></li>
+				-->
+			</ul>
+
+			<div class="title pb55">
+			</div>
+          </div>
+        </div>
+
+	  </div>
+
+
+
+
+
+
+		<!--
+      <div class="footer">
+        <a href="#!">
+          <img src="http://ictedu.co.kr/landing/prj_003/images/logo.png" alt="" />
+        </a>
+      </div>
+	  -->
+
+    </div>
+
+
+<map name="main_Map">
+	<area shape="circle" coords="83,357,66" href="/creative_office.html">
+	<area shape="circle" coords="227,358,66" href="/academy.html">
+	<area shape="circle" coords="370,358,66" href="/about.html">
+	<area shape="circle" coords="83,508,66" href="/market.html">
+	<area shape="circle" coords="371,509,66" href="/link.html">
+	<area shape="circle" coords="516,508,66" href="/contactus.html">
+	<area shape="rect" coords="0,666,644,754" href="/creative_office.html">
+	<area shape="rect" coords="0,753,644,841" href="/academy.html">
+	<area shape="rect" coords="0,840,644,928" href="/market.html">
+	<area shape="rect" coords="0,927,644,1015" href="/link.html">
+</map>
+
+
+
+<map name="menu_Map">
+<!--
+	<area shape="rect" coords="291,111,476,144" href="/about.html">
+	<area shape="rect" coords="291,158,476,191" href="/map.html">
+	<area shape="rect" coords="291,272,476,305" href="/creative_office.html">
+	<area shape="rect" coords="291,381,476,414" href="/academy.html">
+	<area shape="rect" coords="291,483,443,516" href="/market.html">
+	<area shape="rect" coords="291,583,443,616" href="/link.html">
+	<area shape="rect" coords="111,583,224,616" href="/link.html">
+	<area shape="rect" coords="111,483,224,516" href="/market.html">
+	<area shape="rect" coords="111,381,268,414" href="/academy.html">
+	<area shape="rect" coords="111,272,244,305" href="/creative_office.html">
+	<area shape="rect" coords="111,111,240,144" href="/about.html">
+	<area shape="rect" coords="111,9,200,42" href="/">
+-->
+<area shape="rect" coords="183,741,396,785" href="/link.html">
+<area shape="rect" coords="183,694,396,738" href="/link.html">
+<area shape="rect" coords="183,598,396,642" href="/market.html">
+<area shape="rect" coords="183,551,396,595" href="/market.html">
+<area shape="rect" coords="183,459,396,503" href="/academy.html">
+<area shape="rect" coords="183,412,396,456" href="/academy.html">
+<area shape="rect" coords="183,322,396,366" href="/creative_office.html">
+<area shape="rect" coords="183,275,396,319" href="/creative_office.html">
+<area shape="rect" coords="183,183,396,227" href="/map.html">
+<area shape="rect" coords="183,140,396,184" href="/about.html">
+<area shape="rect" coords="183,93,396,137" href="/about.html">
+<area shape="rect" coords="183,0,396,44" href="/">	
+</map>
+
+    <script>
+      const menu = document.querySelectorAll(".menu");
+      const btnMenu = document.querySelectorAll(".btn_menu");
+      function toggle(event) {
+        menu[0].classList.toggle("on");
+        btnMenu[0].classList.toggle("on");
+		$('img[usemap]').rwdImageMaps();
+      }
+      btnMenu[0].addEventListener("click", toggle);
+    </script>
+
+
+<script type="text/javascript">
+<!--
+$(document).ready(function(e) {
+    $('img[usemap]').rwdImageMaps();
+
+
+
+
+
+
+});
+//-->
+</script>
+
+
+</body>
+</html>

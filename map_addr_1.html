@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="map1"  style="padding:0; margin:0; width:100%;height:315px;" ></div>
+	<script>
+		var marker;
+		var lat_v = 37.552492;
+		var lng_v = 126.937848;
+
+		function myMap1() {
+			var map = new google.maps.Map(document.getElementById('map1'), {
+				zoom: 17,
+				center: {lat:lat_v, lng:lng_v}
+			});
+
+			marker = new google.maps.Marker({
+				map: map,
+				draggable: true,
+				animation: google.maps.Animation.DROP,
+				position: {lat:lat_v, lng:lng_v}
+			});
+			marker.addListener('click', toggleBounce);
+		}
+		function toggleBounce() {
+			if (marker.getAnimation() !== null) {
+				marker.setAnimation(null);
+			} else {
+				marker.setAnimation(google.maps.Animation.BOUNCE);
+			}
+		}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvkWWWZHSz49hdnRk7rcofDaj35n7vFz8&callback=myMap1"></script>
+</body>
+</html>

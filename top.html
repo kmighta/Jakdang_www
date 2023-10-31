@@ -1,0 +1,85 @@
+<?php
+	switch($page_code) {
+		case 'about'			:	$title_name		= 'About 작당연구소';
+										$color_code		= ' background:#F892BC; ';
+										$margin_value	= ' margin:68px 0px 70px 0px; ';
+										break;
+		case 'academy'	:	$title_name		= '작당아카데미 소개';
+										$color_code		= ' background:#74B889; ';
+										$margin_value	= ' margin:68px 0px 145px 0px; ';
+										break;
+		case 'contactus'	:	$title_name		= 'Contact Us';
+										$color_code		= ' background:#05FBAD; ';
+										$margin_value	= ' margin:68px 0px 35px 0px; ';
+										break;
+		case 'creative'		:	$title_name		= '작당창작소 소개';
+										$color_code		= ' background:#FFE700; ';
+										$margin_value	= ' margin:68px 0px 75px 0px; ';
+										break;
+		case 'links'			:	$title_name		= '작당링크 소개';
+										$color_code		= ' background:#FF9A00; ';
+										$margin_value	= ' margin:68px 0px 70px 0px; ';
+										break;
+		case 'market'		:	$title_name		= '작당마켓 소개';
+										$color_code		= ' background:#4FC0E9; ';
+										$margin_value	= ' margin:68px 0px 145px 0px; ';
+										break;
+		case 'map'			:	$title_name		= '찾아오시는 길';
+										$color_code		= ' background:#FFE700; ';
+										$margin_value	= ' margin:68px 0px 145px 0px; ';
+										break;
+		default					:	$margin_value	= ' margin:68px 0px 145px 0px; ';
+										break;
+	}
+?>
+<!-- Top -->
+<tr>
+	<td>
+		<div style="width:100%; margin:0 auto; border-bottom:2px solid #000000;">
+			<div class="top_navi">
+				<ul>
+					<li class="logo">
+						<a href="/"><img src="/common/images/pc/logo.png" class="shake-slow shake-a"></a>
+					</li>
+					<li class="r_menu">
+						<ul>
+							<li>
+								<a href="/about.html">About Us<div class="menu_v"></div></a>
+							</li>
+							<li class="business">
+								<a href="/creative_office.html">Business<div class="menu_v"></div></a>
+								<ul>
+									<li><a href="/creative_office.html">Creative Office</a></li>
+									<li><a href="/academy.html">Academy</a></li>
+									<li><a href="/link.html">Link</a></li>
+									<li><a href="/market.html">Market</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="/contactus.html">Contact Us<div class="menu_v"></div></a>
+								<ul>
+									<li><a href="/contactus.html">Contact Us</a></li>
+									<li><a href="/map.html">Map</a></li>
+								</ul>
+							</li>
+							<li class="login">
+								<a href="javascript:void(0);" onclick="alert('comming soon');">Log in</a>
+							</li>
+							<li class="join">
+								<a href="javascript:void(0);" onclick="alert('comming soon');">Get started</a>
+							</li>
+						</ul>
+
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<!-- Title -->
+		<div style="width:70px; height:70px; border-radius:50%;<?php echo $color_code; ?>display:flex; justify-content:center; align-items:left; flex-direction: column;<?php echo $margin_value; ?>">
+			<span style="position:absolute; margin-left:36px; font-size:40px;font-weight:600;"><?php echo $title_name; ?></span>
+		</div>
+		<!-- // Title -->
+	</td>
+</tr>
+<!-- // Top -->
